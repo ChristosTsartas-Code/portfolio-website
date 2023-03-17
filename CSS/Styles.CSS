@@ -4,6 +4,7 @@
    License: none (public domain)
 */
 
+/* Reset all default styles */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,7 +17,8 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video 
+{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,99 +26,228 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
+/* Reset HTML5 display roles */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section 
 {
 	display: block;
 }
+
+/* Remove list styles */
 ol, ul {
 	list-style: none;
 }
+
+/* Remove blockquote quotes */
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
+/* Remove table border */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-  body {
-    background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #293b33;
+
+/* Set default body styles */
+body {
+	background-color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.6;
+	color: #293b33;
+}
+
+/* Set default heading styles */
+h1, h2, h3, h4 {
+	line-height: 1.4;
+}
+
+h1 {
+	font-size: 2.75em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2.25em;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1.75em;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 1.35em;
+	font-weight: 400;
+}  
+
+/* Set default image styles */
+img {
+	width: 50%;
+}
+
+/* Set default link styles */
+a {
+	color: #994c30;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #cc6540;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #994c30;
+}
+
+a:active {
+	color: #994c30;
+}
+
+/* Set button styles */
+.button {
+	display: inline-block;
+	background-color: transparent;
+	color: #F2CDAC;
+	font-weight: 400;
+	font-size: 10pt;
+	padding: 5px;
+	border-radius: 30px;
+	border: 2px solid #F2CDAC;
+	transition: 0.2s opacity;
+}
+
+.button:hover {
+	opacity: 0.8;
+	background-color: #F2CDAC;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.button.contact {
+	background-color: transparent;
+	color: #F2CDAC;
+	text-transform: uppercase;
+	font-weight: 500;
+	border: 2px solid #F2CDAC;
+}
+
+.button.contact:hover {
+	background-color: #F2CDAC;
+	color: #ffffff
   }
-  
-  h1, h2, h3, h4 {
-    line-height: 1.4;
+  header {
+    background-color: #333;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    color: white;
   }
-  h1 {
-    font-size: 2.75em;
-    font-weight: 700;
+  /* Apo edw ksekinane oi allages */
+  * {
+    box-sizing: border-box;
   }
-  
-  h2 {
-    font-size: 2.25em;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 1.75em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-  }  
-  img {
+  nav {
+    background-color: #333;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    position: fixed;
+    top: 0;
     width: 100%;
   }
-  a {
-    color: #994c30;
-    text-decoration: none; /* No underlining */
+  .hero {
+    background-image: 'none';
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.7);
   }
-  a:hover {
-    color: #cc6540;
-    text-decoration: underline; /* Underlining when hovering over a link */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  a:visited { /* visited link */
-    color: #994c30;
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
   }
-  a:active { /* selected link */
-    color: #994c30;
+  
+  .col-6 {
+    flex: 0 0 50%;
+    padding: 0 15px;
   }
-  .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: transparent;
-    color: #F2CDAC; /* needed to override the default link color */
-    font-weight: 400;
-    font-size: 10pt;
-    padding: 5px;
-    border-radius: 30px;
-    border: 2px solid #F2CDAC; /* width of the border, type, color */
-    transition: 0.2s opacity;
+  .work-item {
+    background-color: #f2f2f2;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
   }
-  .button:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    background-color: #F2CDAC;
-    color: #ffffff;
-    text-decoration: none;
+  footer {
+    background-color: #333;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: white;
   }
-  .button.contact {
-    background-color: transparent;
-    color: #F2CDAC;
-    text-transform: uppercase;
-    font-weight: 500;
-    border: 2px solid #F2CDAC;
+  .centered-text {
+    text-align: center;
   }
-  .button.contact:hover {
-    background-color: #F2CDAC;
-    color: #ffffff;
+  
+  .right-aligned-text {
+    text-align: right;
   }
+  .logo {
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    margin-bottom: 10px;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* adjust this value as needed */
+  }
+/* styles for the navigation bar */
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
