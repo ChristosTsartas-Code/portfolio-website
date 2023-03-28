@@ -96,57 +96,63 @@ img {
 	width: 100%;
   display: block;
   margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Set default link styles */
 a {
-	color: #994c30;
+	color: #ffffff;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #cc6540;
+	color: #4DABA6;
 	text-decoration: underline;
 }
 
 a:visited {
-	color: #994c30;
+	color: #ffffff;
 }
 
 a:active {
-	color: #994c30;
+	color: #4DABA6;
 }
 
 /* Set button styles */
 .button {
 	display: inline-block;
-	background-color: transparent;
-	color: #F2CDAC;
-	font-weight: 400;
+	background-color: #1B7F7A;
+	color: #ffffff;
+	font-weight: 500;
 	font-size: 10pt;
 	padding: 5px;
-	border-radius: 30px;
-	border: 2px solid #F2CDAC;
+	border-radius: 10px;
+	border: 2px solid #1B7F7A;
 	transition: 0.2s opacity;
 }
 
 .button:hover {
 	opacity: 0.8;
-	background-color: #F2CDAC;
+	background-color: #4DABA6;
 	color: #ffffff;
 	text-decoration: none;
 }
 
 .button.contact {
-	background-color: transparent;
-	color: #F2CDAC;
-	text-transform: uppercase;
+	display: inline-block;
+	background-color: #1B7F7A;
+	color: #ffffff;
 	font-weight: 500;
-	border: 2px solid #F2CDAC;
+	font-size: 10pt;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px solid #1B7F7A;
+	transition: 0.2s opacity;
 }
 
 .button.contact:hover {
-	background-color: #F2CDAC;
+	background-color: #4DABA6;
 	color: #ffffff
   }
 
@@ -154,19 +160,22 @@ a:active {
   header {
     background-color: #333333;
     width: 100%;
-    text-align: center;
+    text-align: unset;
     color: white;
     position: initial;
   }
 
   .logo {
      width: 100px;
+     padding: 10px;
+     margin-left: 5px;
   }
 
   nav {
     background-color: #333333;
     padding: 10px;
     font-size: 16px;
+    width: auto;
     color: #ffffff;
   }
 
@@ -276,6 +285,7 @@ a:active {
     align-items: center;
     margin-top: 80px; /* adjust this value as needed */
   }
+  
 /* styles for the navigation bar */
 
 
@@ -289,23 +299,66 @@ a:active {
   }
   
 
-  .row {
-    width: 100%;
-    display: flex;
-    margin: 40px -15px;
-    flex-direction: row;
-   
-  }
-
-  .col-6 {
-    width: 50%;
-        padding: 0 15px;
+    .row {
+      width: 100%;
+      display: flex;
+      margin: 40px -15px;
+      flex-direction: row;
+  
+    }
+  
+    .col-6 {
+      width: 50%;
+      padding: 0 15px;
+    }
+  
+    .col-3 {
+      width: 33.3%;
+      padding: 0 15px;
+  
+    }
+  /* Here starts animation*/
+    @keyframes color-change {
+      from {
+        fill: #edc655;
       }
-
-      .col-3 {
-        width: 33.3%;
-        padding: 0 15px;
-    
+  
+      to {
+        fill: #f76414;
       }
-    
-}
+    }
+    /* THe sun */
+     .sun {
+      animation-duration: 4s;
+      animation-name: color-change;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+      animation: 4s color-change infinite alternate linear
+    }
+    /* The color of the sun */
+    @keyframes color-change {
+      from {fill: #edc655;}
+      to {fill: #f76414;}
+    }
+    /* The clouds front and back */
+    @keyframes cloud-move {
+      from {transform: translate(0,50px);}
+      to {transform: translate(200px,50px);}
+    }
+    .cloud-front {
+      animation-duration: 30s;
+      animation-name: cloud-move;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+    }
+    @keyframes cloud-move-reverse {
+      from {transform: translate(446px,48px);}
+      to {transform: translate(100px, 48px);}
+    }
+    .cloud-back {
+      animation: 34s cloud-move-reverse infinite alternate linear;
+    }
+
+    }
