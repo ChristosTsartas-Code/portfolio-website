@@ -55,6 +55,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* Set default body styles */
 body {
@@ -234,7 +237,7 @@ a:active {
   }
  
   .col-6 {
-    width: 49.8%;
+    width: 100%;
   }
   .col-12 {
     width: 100%;
