@@ -157,211 +157,263 @@ a:active {
 .button.contact:hover {
 	background-color: #4DABA6;
 	color: #ffffff
-  }
+}
 
+header {
+  background-color: #333333;
+  width: 100%;
+  text-align: unset;
+  color: white;
+  position: initial;
+}
 
-  header {
-    background-color: #333333;
-    width: 100%;
-    text-align: unset;
-    color: white;
-    position: initial;
-  }
-
-  .logo {
-     width: 100px;
-     padding: 10px;
-     margin-left: 5px;
-  }
-
-  nav {
-    background-color: #333333;
+.logo {
+    max-width: 150px;
     padding: 10px;
-    font-size: 16px;
-    width: auto;
-    color: #ffffff;
-  }
+    margin-left: 5px;
+}
 
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
+nav {
+  background-color: #333333;
+  padding: 10px;
+  font-size: 16px;
+  width: auto;
+  color: #ffffff;
+}
 
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  /* Apo edw ksekinane oi allages */
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
 
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
 
-  * {
-    box-sizing: border-box;
-  }
+/* Apo edw ksekinane oi allages */
 
+* {
+  box-sizing: border-box;
+}
 
-    main {
-    margin: top 000px;
-  }
+main {
+  margin: top 000px;
+}
 
+.hero {
+  background-image: 'none';
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+}
 
-  .hero {
-    background-image: 'none';
-    height: 500px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.7);
-  }
+/* 
+ * Grid
+ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 15px;
-  }
-  
-
-  .row {
-    width: 100%;
-    display: flex;
-    margin: 40px -15px;
-    align-items: flex-start;
-    justify-content: space-between;
-   
-  }
+.row {
+  width: 100%;
+  display: flex;
+  margin: 40px -15px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
  
-  .col-6 {
-    width: 100%;
-  }
-  .col-12 {
-    width: 100%;
-  }
+.col-6 {
+  width: 49%;
+}
+.col-12 {
+  width: 100%;
+}
 
-  .work-item {
-    background-color: #f2f2f2;
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-  }
+.work-item {
+  background-color: #f2f2f2;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
+/* 
+ * Buttons
+ */
+.button {
+  background-color: #1B7F7A;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 1.7rem;
+}
 
-/*footer*/
+/* 
+ * Project details
+ */
+.project_details h1 {
+  text-align: center;
+  font-size: 32px;;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.project_details h2 {
+  text-align: center;
+}
 
-  footer {
-    background-color: #333;
-    width: 100%;
-    text-align: center;
-    color: white;
-    padding: 50px 0;
-  }
+.project_details img {
+  width: 100%;
+}
 
-  /*linkedin*/
+.project_details .project_details_description {
+  text-align: center;
+  line-height: 1.1;
+  font-size: 16px;
+  color: #555;
+  width: 70%;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.project_details .overview-header {
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.project_details .overview-skill-list ul {
+  list-style-type: initial;
+}
+
+/* 
+ * Footer
+ */
+footer {
+  background-color: #333;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+}
+
 .lnkin {
-
   height: 43px;
   width: auto;
 }
 
+.centered-text {
+  text-align: center;
+}
 
-  .centered-text {
-    text-align: center;
-  }
-  
-  .right-aligned-text {
-    text-align: right;
-  }
+.right-aligned-text {
+  text-align: right;
+}
 
   
-  .text {
-    margin-bottom: 10px;
-  }
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px; /* adjust this value as needed */
-  }
+.text {
+  margin-bottom: 10px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px; /* adjust this value as needed */
+}
   
 /* styles for the navigation bar */
 
-
-/* Layout Laptop */
+/* 
+ * Layout Laptop
+ */
  
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1200px) {
 
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 15px;
   }
   
+  .row {
+    display: flex;
+    margin: 40px -15px;
+    flex-direction: row;
+  }
+}
 
-    .row {
-      width: 100%;
-      display: flex;
-      margin: 40px -15px;
-      flex-direction: row;
-  
-    }
-  
-    .col-6 {
-      width: 50%;
-      padding: 0 15px;
-    }
-  
-    .col-3 {
-      width: 33.3%;
-      padding: 0 15px;
-  
-    }
-  /* Here starts animation*/
-    @keyframes color-change {
-      from {
-        fill: #edc655;
-      }
-  
-      to {
-        fill: #f76414;
-      }
-    }
-    /* THe sun */
-     .sun {
-      animation-duration: 4s;
-      animation-name: color-change;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: linear;
-      animation: 4s color-change infinite alternate linear
-    }
-    /* The color of the sun */
-    @keyframes color-change {
-      from {fill: #edc655;}
-      to {fill: #f76414;}
-    }
-    /* The clouds front and back */
-    @keyframes cloud-move {
-      from {transform: translate(0,50px);}
-      to {transform: translate(200px,50px);}
-    }
-    .cloud-front {
-      animation-duration: 30s;
-      animation-name: cloud-move;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: linear;
-    }
-    @keyframes cloud-move-reverse {
-      from {transform: translate(446px,48px);}
-      to {transform: translate(100px, 48px);}
-    }
-    .cloud-back {
-      animation: 34s cloud-move-reverse infinite alternate linear;
-    }
+.navtoggle li:last-child {
+  display: none;
+}
 
-    }
+/* 
+ * Layout Mobile
+ */
+@media only screen and (max-width: 641px) {
+
+  .navtoggle li:last-child {
+    display: block;;
+  }
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  .navtoggle.responsive li:not(:last-child) {
+    display: block;
+  }
+}
+
+/* 
+ * Here starts animation
+ */
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
+
+/* The sun */
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation: 4s color-change infinite alternate linear
+}
+
+/* The color of the sun */
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+/* The clouds front and back */
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}

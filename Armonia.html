@@ -8,28 +8,128 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="CSS/Styles.CSS">
+  <script src="https://kit.fontawesome.com/0a37a49e68.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
     rel="stylesheet">
+    <link href="/images/branding/product/ico/googleg_lodp.ico" rel="shortcut icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
   <header id="header">
+
     <div class="container">
-      <a href="#">
-        <img class="logo" src="logo-placeholder.JPG" alt="Logo">
-      </a>
+      
+      <div class="navtoggle" id="myNavtoggle">
+
+        <a href="Index.html">
+          <img class="logo" src="logo-placeholder.JPG" alt="Logo">
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="Index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+
+      </div>
+
       <h1>Christos Tsartas | UX/UI Designer</h1>
-      <nav>
-        <ul>
-          <li><a href="Index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+
     </div>
   </header>
+
   <main>
+    
+    <!-- START -->
+    <div class="project_details">
+
+      <h1>ARMONIA MENTAL HEALTH WEB APP</h1>
+
+      <p class="project_details_description">
+        A responsive health and fitness application was developed by conducting a thorough analysis of the problem space and performing a competitive analysis. User research was conducted, and user personas, user flows, and user journey maps were created to ensure the application met user needs. Finally, a high-fidelity prototype was built and testing was conducted to ensure its effectiveness and usability.
+      </p>
+
+      <h2>Design</h2>
+
+      <div class="container">
+        <div class="row">
+          <img src="Img/ArmoniaWebApp/FinalProduct/LandingPagePC_big.png" alt="homepage Image">
+        </div>
+      </div>
+
+      <h2>Overview</h2>
+
+      <p class="project_details_description">
+        Armonia is designed to provide users with the opportunity to manage their mental health and well-being. Whether you're struggling with stress, anxiety, depression, or simply looking to improve your overall mental health, Armonia can be a helpful companion on your journey. Features like guided meditations, mindfulness exercises, and sleep aids, can help you reduce stress, improve sleep quality, and build resilience over time. Whether you have just a few minutes to spare or want to create a daily self-care routine, Armonia can be a convenient and accessible way to prioritize your mental health and well-being.
+      </p>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="colum col-6 overview-header">
+            Skills Used
+          </div>
+
+          <div class="colum col-6 overview-skill-list">
+            <ul>
+              <li>Competitor Analysis | SWOT Analysis</li>
+              <li>Business Requirements</li>
+              <li>User Interviews</li>
+              <li>Card Sorting | Affinity Mapping</li>
+              <li>User Personas | User Stories</li>
+              <li>Sitemap | Taskflows</li>
+              <li>Wireframing | Prototyping (low-high fidelity)</li>
+              <li>Usability Testing | Preference Testing</li>
+              <li>Design Styleguide | Design Systems</li>
+            </ul>
+          </div>
+
+        </div><!-- row -->
+
+        <div class="row">
+
+          <div class="colum col-6 overview-header">
+            Tools used
+          </div>
+
+          <div class="colum col-6 overview-skill-list">
+            <ul>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>Hand-made sketching</li>
+            </ul>
+          </div>
+
+        </div><!-- row -->
+
+        <div class="row">
+
+          <div class="colum col-6 overview-header">
+            My Roles
+          </div>
+
+          <div class="colum col-6 overview-skill-list">
+            <ul>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>Hand-made sketching</li>
+            </ul>
+          </div>
+
+        </div><!-- row -->
+
+      </div>
+
+    </div>
+    <!-- END -->
+    
     <div>
       Armonia is designed to provide users with the opportunity to manage their mental health and well-being.
       Whether you're struggling with stress, anxiety, depression, or simply looking to improve your overall mental
@@ -97,6 +197,7 @@
       <p>Copyright © Christos Tsartas 2023</p>
     </div>
   </footer>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>

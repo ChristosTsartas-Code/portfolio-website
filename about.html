@@ -5,9 +5,12 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="CSS/Styles.CSS">
+  <script src="https://kit.fontawesome.com/0a37a49e68.js" crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
     rel="stylesheet">
+    <link href="/images/branding/product/ico/googleg_lodp.ico" rel="shortcut icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta charset="utf-8">
@@ -15,24 +18,34 @@
     About Me | Portfolio Site
   </title>
 </head>
-
 <body>
+  
   <header id="header">
-    <div class="container">
-      <a href="#">
-        <img class="logo" src="logo-placeholder.JPG" alt="Logo">
-      </a>
 
-      <h1>About me</h1>
-      <nav>
-        <ul>
-          <li><a href="Index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      
+      <div class="navtoggle" id="myNavtoggle">
+
+        <a href="Index.html">
+          <img class="logo" src="logo-placeholder.JPG" alt="Logo">
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="Index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <h1>Christos Tsartas | UX/UI Designer</h1>
+
     </div>
   </header>
+
   <main>
     <div>
       This is my picture<br><br>
@@ -86,7 +99,7 @@
       <p>Copyright © Christos Tsartas 2023</p>
     </div>
   </footer>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
-
 </html>
