@@ -5,6 +5,13 @@
 */
 
 /* Reset all default styles */
+
+
+* {
+  box-sizing: border-box;
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -107,6 +114,7 @@ img {
 a {
 	color: #ffffff;
 	text-decoration: none;
+    font-weight: 700;
 }
 
 a:hover {
@@ -159,18 +167,20 @@ a:active {
 	color: #ffffff
 }
 
-header {
-  background-color: #F4F8FE;
-  border-bottom: 3px solid #4a4a4a;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  text-align: center;
 
+
+header {
+  background-color: #333333;
+  width: 100%;
+  color: white;
+  position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px 0;
+    z-index: 4;
 }
+
+
 
 .logo {
     max-width: 150px;
@@ -178,6 +188,53 @@ header {
     margin-left: 5px;
 }
 
+
+
+header nav > ul {
+  list-style-type: none;
+  padding: 40px 0;
+}
+
+ .navtoggle li:not(:last-child) {
+  display: none;
+}
+
+
+ .navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+ .navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+
+ 
+ .navtoggle.responsive li  {
+  display: block;
+}    
+  
+    
+ .navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+
+ .navtoggle.responsive li  {
+  display: block;
+  padding: 12px 0;
+  border-top: 1px solid #ffffff;
+}
+
+ .navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+  
+
+/*
 nav {
   background-color: #333333;
   padding: 10px;
@@ -186,121 +243,32 @@ nav {
   color: #ffffff;
 }
 
-nav > ul {
-  list-style-type: none;
+nav ul {
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 nav li {
   display: inline-block;
   margin-right: 20px;
 }
-
-nav a {
+*/
+header nav a {
   color: #fff;
   text-decoration: none;
 }
 
+
+
+
+
+
+
+
 /* Apo edw ksekinane oi allages */
 
-* 
-{
-  box-sizing: border-box;
-}
 
-body {
-  font-size: 16px;
-}
-
-header {
-  background-color: #F4F8FE;
-    border-bottom: 3px solid #4a4a4a;
- position: fixed;
-    width: 100%;
-    z-index: 2;
-    top: 0;
-    left: 0;
-   padding: 10px 0;
-      text-align: center;
-
-}
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-}
- 
-.navtoggle.responsive li  {
-  display: block;
-}    
-     
- .navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
-
-.navtoggle.responsive li  {
-  display: block;
-  padding: 12px 0;
-  border-top: 1px solid rgb(79, 122, 165);
-}
-
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
-    
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-decoration: none;
-      color: #4a4a4a;
-}
-
-nav > ul > li > a:hover {
- color:#868B96 
-}
-
-  main {
-  padding-top: 56px;
-}
-
-.container {
-      max-width: 1200px;    
-        padding: 0 15px;
-}
-
-.color {
- height: 1200px;
-    background-color: #f3f3f3;
-
-}
-
-#contact {
-    margin-top: 40px;
-    padding: 40px 0;
-      background-color: #f6f6f6;
-}
-/*{
-  box-sizing: border-box;
-}
 
 main {
   margin: top 000px;
@@ -313,7 +281,7 @@ main {
   text-align: center;
   color: white;
   background-color: rgba(255, 255, 255, 0.7);
-}*/
+}
 
 /* 
  * Grid
@@ -321,6 +289,7 @@ main {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .row {
@@ -329,11 +298,10 @@ main {
   margin: 40px -15px;
   align-items: flex-start;
   justify-content: space-between;
+  flex-direction: column;
 }
  
-.col-6 {
-  width: 49%;
-}
+
 .col-12 {
   width: 100%;
 }
@@ -370,7 +338,7 @@ main {
 }
 
 .project_details img {
-  width: 100%;
+  width: 60%;
 }
 
 .project_details .project_details_description {
@@ -396,12 +364,28 @@ main {
  * Footer
  */
 footer {
-  background-color: #333333;
+  background-color: #333;
   width: 100%;
   text-align: center;
-  color: Black;
+  color: white;
   padding: 50px 0;
 }
+
+
+footer  ul {
+  list-style-type: none;
+  padding: 0px 0;
+ margin: 0;
+}
+    
+ 
+    
+footer ul   li {
+  display: inline-block;
+      margin-left:20px;
+       
+} 
+
 
 .lnkin {
   height: 43px;
@@ -417,6 +401,13 @@ footer {
 }
 
   
+.more-space  {
+    margin-top: 20px;
+    
+    
+}
+
+
 .text {
   margin-bottom: 10px;
 }
@@ -432,7 +423,7 @@ footer {
 
 /* 
  * Layout Laptop
- */
+
  
 @media only screen and (max-width: 1200px) {
 
@@ -448,76 +439,14 @@ footer {
   }
 }
 
-.navtoggle li:not(:last-child) {
+.navtoggle li:last-child {
   display: none;
 }
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-}
 
+ 
+@media only screen and (max-width: 641px) {
 
-/* 
- * Layout Mobile
- */
-  @media only screen and (min-width: 640px) {
-    
-    header {
-  text-align: unset;
-         padding: 30px 0;
-}
-    
-     nav {
-    width: auto;
-    float: right;
-    margin-top: 0px;
-  }
-    
-    
-        
- .navtoggle.responsive nav {
-  padding: 0px 0 0;
-}
-    
-  nav > ul {
-  list-style-type: none;
-  padding: 0;
- margin: 1em 0;
-}
-     
-   nav > ul > li {
-  display: inline-block;
-       
-} 
-    
-  .navtoggle.responsive li  {
-   padding:0px 0;
-  border-top: 0px solid rgb(79, 122, 165);
-}
-    
-  .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-    
-    .navtoggle li:last-child {
-  display: none;
-}
-    
-   
-    
-    main {
-  padding-top: 133px;
-} 
-    .container {  
-       margin: 0 auto;
-        padding: 0 0px;
-}
-  /*.navtoggle li:last-child {
+  .navtoggle li:last-child {
     display: block;;
   }
   .navtoggle li:not(:last-child) {
@@ -526,11 +455,11 @@ footer {
   .navtoggle.responsive li:not(:last-child) {
     display: block;
   }
-}*/
+}
 
-/* 
- * Here starts animation
- */
+  */
+
+
 
 @keyframes color-change {
   from {
@@ -576,4 +505,73 @@ footer {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+
+
+
+
+@media only screen and (min-width: 640px) {
+    
+    header {
+  background-color: #333333;
+  width: 100%;
+  text-align: unset;
+  color: white;
+  position: initial;
+        padding: 20px;
+}
+ 
+    
+    
+
+     header nav {
+    width: auto;
+    float: right;
+    margin-top: -45px;
+  }
+        
+ .navtoggle.responsive nav {
+  padding: 0px 0 0;
+}
+    
+   header  nav > ul {
+  list-style-type: none;
+  padding: 0px 0;
+ margin: 1em 0;
+}
+    
+ 
+    
+    
+    
+    
+  header  nav > ul > li {
+  display: inline-block;
+      margin-left:20px;
+       
+} 
+    
+.navtoggle.responsive li  {
+   padding:0px 0;
+  border-top: 0px solid #ffffff;
+}
+    
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+    
+.navtoggle li:last-child {
+  display: none;
+}
+    
+    
+    .row {
+ 
+    flex-direction: row;
+}
+    
+    .col-6 {
+  width: 49%;
+}
+    
 }

@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+<html lang="en" dir="ltr"><head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="CSS/Styles.CSS">
   <script src="https://kit.fontawesome.com/0a37a49e68.js" crossorigin="anonymous"></script>
-  <link
-    href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap"
-    rel="stylesheet">
+ 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&amp;display=swap" rel="stylesheet">
     <link href="/images/branding/product/ico/googleg_lodp.ico" rel="shortcut icon">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,36 +14,26 @@
   </title>
 </head>
 <body>
-  
   <header id="header">
-
     <div class="container">
-      
       <div class="navtoggle" id="myNavtoggle">
-
         <a href="Index.html">
           <img class="logo" src="logo-placeholder.JPG" alt="Logo">
+            <h1>Christos Tsartas | UX/UI Designer</h1>
         </a>
-
         <nav>
           <ul>
             <li><a href="Index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars" aria-hidden="true"></i></a></li>
           </ul>
         </nav>
-
       </div>
-
-      <h1>Christos Tsartas | UX/UI Designer</h1>
-
     </div>
   </header>
-
   <main>
     <div>
-      This is my picture<br><br>
       <picture>
         <source srcset="Img/ChristosPic.jpg" media="(max-width: 767px)">
         <source srcset="Img/ChristosPic.jpg" media="(min-width: 768px)">
@@ -66,7 +51,7 @@
             designs.
             I believe that my diverse background allows me to bring a fresh perspective to UX design and enables me to
             create designs that are not only aesthetically pleasing but also meet users' needs.</p>
-          <a href="files/ChristosTsartasResume.pdf" download>Download my CV</a>
+          <a href="files/ChristosTsartasResume.pdf" download="">Download my CV</a>
         </div>
         <div class="column col-6">
           <div id="skills">
@@ -81,25 +66,28 @@
     <p>
       Do you like my work and want to discuss opportunities? Please get in touch.
       Phone number: <a href="Tel: +49 17663303474"> Call me </a> .
-    </p>
-    <div> Do you prefer to send an email?
-      <a href="mailto:tsartakos@gmail.com" class="button contact">Send me an email</a>
+      </p>
+    <div class="more-space"> <p> Do you prefer to send an email?</p><p>
+      <a href="mailto:tsartakos@gmail.com" class="button contact">Send me an email</a> 
       <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B7F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
-        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-        <polyline points="22,6 12,13 2,6"></polyline>
-      </svg>--This is the original Send an Email with the SVG Icon-->
-    </div>
-    <div>
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>--This is the original Send an Email with the SVG Icon-->
+    </p></div>
+    <div>   
       <!--Social Media Layout and Placeholders-->
       <a href="https://www.linkedin.com/in/christos-tsartas-73b54416a/" target="_self"><br>
         <img class="lnkin" src="Img/linkedin.PNG">
       </a><br>
-      <a href="about.html#skills" target="_blank">My Skills</a><br>
-      <a href="Index.html#header">Back to the top</a>
-      <p>Copyright © Christos Tsartas 2023</p>
+        <ul>
+        <li><a href="about.html#skills" target="_blank">My Skills</a> </li>
+       <li><a href="Index.html#header">Back to the top</a></li>
+    </ul>
+      <p class="more-space">Copyright © Christos Tsartas 2023</p>
     </div>
   </footer>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/scripts.js"></script>
-</body>
-</html>
+
+
+</body></html>
