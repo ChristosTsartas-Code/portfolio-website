@@ -123,10 +123,10 @@ a:hover {
 }
 
 a:visited {
-	color: #131010;
+	color: #4DABA6;
   text-decoration: none;
-    font-weight: 700;
-    cursor: pointer;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 a:active {
