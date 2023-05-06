@@ -262,7 +262,7 @@ header {
 
 header nav > ul {
   list-style-type: none;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .navtoggle li:not(:last-child) {
