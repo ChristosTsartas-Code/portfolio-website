@@ -1,109 +1,182 @@
-/*I need to start with CSS in the next task*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* I need to start with CSS in the next task
+http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
 /* Reset all default styles */
 
-
 * {
   box-sizing: border-box;
 }
 
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video 
-{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
 /* Reset HTML5 display roles */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section 
-{
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 /* Remove list styles */
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 /* Remove blockquote quotes */
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
 }
 
 /* Remove table border */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
 /* Set default body styles */
 body {
-	background-color: #ffffff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 1.6;
-	color: #293b33;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #293b33;
 }
 
 /* Set default heading styles */
-h1, h2, h3, h4 {
-	line-height: 1.4;
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
 }
 
 h1 {
-	font-size: 2.75em;
-	font-weight: 700;
+  font-size: 2.75em;
+  font-weight: 700;
 }
 
 h2 {
-	font-size: 2.25em;
-	font-weight: 700;
+  font-size: 2.25em;
+  font-weight: 700;
 }
 
 h3 {
-	font-size: 1.75em;
-	font-weight: 400;
+  font-size: 1.75em;
+  font-weight: 400;
 }
 
 h4 {
-	font-size: 1.35em;
-	font-weight: 400;
-}  
+  font-size: 1.35em;
+  font-weight: 400;
+}
 
 /* Set default image styles */
 img {
-	width: 100%;
+  width: 100%;
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -112,130 +185,122 @@ img {
 
 /* Set default link styles */
 a {
-	color: #ffffff;
-	text-decoration: none;
-    font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 a:hover {
-	color: #4DABA6;
-	text-decoration: underline;
+  color: #4daba6;
+  text-decoration: underline;
 }
 
 a:visited {
-	color: #4DABA6;
+  color: #4daba6;
   text-decoration: none;
   font-weight: 700;
   cursor: pointer;
 }
 
 a:active {
-	color: #4DABA6;
+  color: #4daba6;
 }
 
 /* Set button styles */
 .button {
-	display: inline-block;
-	background-color: #1B7F7A;
-	color: #ffffff;
-	font-weight: 500;
-	font-size: 10pt;
-	padding: 5px;
-	border-radius: 10px;
-	border: 2px solid #1B7F7A;
-	transition: 0.2s opacity;
+  display: inline-block;
+  background-color: #1b7f7a;
+  color: #fff;
+  font-weight: 500;
+  font-size: 10pt;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #1b7f7a;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
-	opacity: 0.8;
-	background-color: #4DABA6;
-	color: #ffffff;
-	text-decoration: none;
+  opacity: 0.8;
+  background-color: #4daba6;
+  color: #fff;
+  text-decoration: none;
 }
 
 .button.contact {
-	display: inline-block;
-	background-color: #1B7F7A;
-	color: #ffffff;
-	font-weight: 500;
-	font-size: 10pt;
-	padding: 5px;
-	border-radius: 10px;
-	border: 2px solid #1B7F7A;
-	transition: 0.2s opacity;
+  display: inline-block;
+  background-color: #1b7f7a;
+  color: #fff;
+  font-weight: 500;
+  font-size: 10pt;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #1b7f7a;
+  transition: 0.2s opacity;
 }
 
 .button.contact:hover {
-	background-color: #4DABA6;
-	color: #ffffff
+  background-color: #4daba6;
+  color: #fff;
 }
 
-
-
 header {
-  background-color: #333333;
+  background-color: #333;
   width: 100%;
   color: white;
   position: fixed;
-    top: 0;
-    right: 0;
-    padding: 10px 0;
-    z-index: 4;
+  top: 0;
+  right: 0;
+  padding: 10px 0;
+  z-index: 4;
 }
-
-
 
 .logo {
-    max-width: 150px;
-    padding: 10px;
-    margin-left: 5px;
+  max-width: 150px;
+  padding: 10px;
+  margin-left: 5px;
 }
-
-
 
 header nav > ul {
   list-style-type: none;
   padding: 40px 0;
 }
 
- .navtoggle li:not(:last-child) {
+.navtoggle li:not(:last-child) {
   display: none;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
 
- .navtoggle, .navtoggle.responsive {
+.navtoggle.responsive {
   position: relative;
 }
 
- .navtoggle li .icon {
+.navtoggle li .icon {
   position: absolute;
   right: 0;
   top: 2px;
   font-size: 20px;
 }
 
-
- 
- .navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
-}    
-  
-    
- .navtoggle.responsive nav {
+}
+
+.navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-
- .navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 12px 0;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #fff;
 }
 
- .navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-  
 
 /*
 nav {
@@ -262,19 +327,10 @@ header nav a {
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
 /* Apo edw ksekinane oi allages */
 
-
-
 main {
-  margin: top 000px;
+  margin: top 000 px;
 }
 
 .hero {
@@ -286,8 +342,8 @@ main {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* 
- * Grid
+/*
+  Grid
  */
 .container {
   max-width: 1200px;
@@ -303,7 +359,6 @@ main {
   justify-content: space-between;
   flex-direction: column;
 }
- 
 
 .col-12 {
   width: 100%;
@@ -317,25 +372,24 @@ main {
   margin-bottom: 30px;
 }
 
-/* 
- * Buttons
+/* Buttons
  */
 .button {
-  background-color: #1B7F7A;
+  background-color: #1b7f7a;
   color: white;
   border-radius: 8px;
   padding: 1rem 1.7rem;
 }
 
-/* 
- * Project details
+/* Project details
  */
 .project_details h1 {
   text-align: center;
-  font-size: 32px;;
+  font-size: 32px;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 .project_details h2 {
   text-align: center;
 }
@@ -363,8 +417,7 @@ main {
   list-style-type: initial;
 }
 
-/* 
- * Footer
+/* Footer
  */
 footer {
   background-color: #333;
@@ -374,21 +427,16 @@ footer {
   padding: 50px 0;
 }
 
-
-footer  ul {
+footer ul {
   list-style-type: none;
-  padding: 0px 0;
- margin: 0;
+  padding: 0 px;
+  margin: 0;
 }
-    
- 
-    
-footer ul   li {
-  display: inline-block;
-      margin-left:20px;
-       
-} 
 
+footer ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
 
 .lnkin {
   height: 43px;
@@ -403,13 +451,9 @@ footer ul   li {
   text-align: right;
 }
 
-  
-.more-space  {
-    margin-top: 20px;
-    
-    
+.more-space {
+  margin-top: 20px;
 }
-
 
 .text {
   margin-bottom: 10px;
@@ -421,20 +465,17 @@ footer ul   li {
   align-items: center;
   margin-top: 80px; /* adjust this value as needed */
 }
-  
+
 /* styles for the navigation bar */
 
-/* 
- * Layout Laptop
+/* Layout Laptop
 
- 
 @media only screen and (max-width: 1200px) {
 
   .container {
     width: 100%;
     margin: 0 15px;
   }
-  
   .row {
     display: flex;
     margin: 40px -15px;
@@ -446,7 +487,6 @@ footer ul   li {
   display: none;
 }
 
- 
 @media only screen and (max-width: 641px) {
 
   .navtoggle li:last-child {
@@ -461,8 +501,6 @@ footer ul   li {
 }
 
   */
-
-
 
 @keyframes color-change {
   from {
@@ -481,19 +519,31 @@ footer ul   li {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
-  animation: 4s color-change infinite alternate linear
+  animation: 4s color-change infinite alternate linear;
 }
 
 /* The color of the sun */
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
+
 /* The clouds front and back */
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200 px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -501,80 +551,72 @@ footer ul   li {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate (446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
-
-
-
 @media only screen and (min-width: 640px) {
-    
-    header {
-  background-color: #333333;
-  width: 100%;
-  text-align: unset;
-  color: white;
-  position: initial;
-        padding: 20px;
-}
- 
-    
-    
+  header {
+    background-color: #333;
+    width: 100%;
+    text-align: unset;
+    color: white;
+    position: initial;
+    padding: 20px;
+  }
 
-     header nav {
+  header nav {
     width: auto;
     float: right;
     margin-top: -45px;
   }
-        
- .navtoggle.responsive nav {
-  padding: 0px 0 0;
-}
-    
-   header  nav > ul {
-  list-style-type: none;
-  padding: 0px 0;
- margin: 1em 0;
-}
-    
- 
-    
-    
-    
-    
-  header  nav > ul > li {
-  display: inline-block;
-      margin-left:20px;
-       
-} 
-    
-.navtoggle.responsive li  {
-   padding:0px 0;
-  border-top: 0px solid #ffffff;
-}
-    
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-    
-.navtoggle li:last-child {
-  display: none;
-}
-    
-    
-    .row {
- 
+
+  .navtoggle.responsive nav {
+    padding: 0 px 0 0;
+  }
+
+  header nav > ul {
+    list-style-type: none;
+    padding: 0 px;
+    margin: 1em 0;
+  }
+
+  header nav > ul > li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0 px;
+    border-top: 0 px solid #fff;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .row {
     flex-direction: row;
+  }
+
+  .col-6 {
+    width: 49%;
+  }
 }
-    
-    .col-6 {
-  width: 49%;
-}
-    
-}
+
+/* End of CSS file */
